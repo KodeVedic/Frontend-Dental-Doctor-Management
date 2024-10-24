@@ -5,14 +5,14 @@ import Login from './components/Login';
 import Signup from './components/Signup';
 import OTPVerification from './components/OTPVerification';
 import Dashboard from './components/Dashboard';
-import Dash from './dash/Dash';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <AuthProvider>
       <Router>
         <Routes>
-        {/* <Route path="/" element={<Dash />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
           <Route path="/verify-otp" element={<OTPVerification />} />
